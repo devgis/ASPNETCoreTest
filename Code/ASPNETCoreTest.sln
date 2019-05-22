@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETCoreTest", "ASPNETCoreTest\ASPNETCoreTest.csproj", "{DA36A38F-85EC-44BB-A5E2-E9A2E56E436D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETCoreAPPTest", "NETCoreAPPTest\NETCoreAPPTest.csproj", "{E109B99A-6928-4289-AFEC-9FADCD867747}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA36A38F-85EC-44BB-A5E2-E9A2E56E436D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA36A38F-85EC-44BB-A5E2-E9A2E56E436D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA36A38F-85EC-44BB-A5E2-E9A2E56E436D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA36A38F-85EC-44BB-A5E2-E9A2E56E436D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E109B99A-6928-4289-AFEC-9FADCD867747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E109B99A-6928-4289-AFEC-9FADCD867747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E109B99A-6928-4289-AFEC-9FADCD867747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E109B99A-6928-4289-AFEC-9FADCD867747}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

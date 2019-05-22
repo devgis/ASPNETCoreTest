@@ -1,0 +1,9 @@
+E:\提升\ASPNETCoreTest\NETCoreAPPTest\bin\Debug\netcoreapp1.1\NETCoreAPPTest.deps.json
+E:\提升\ASPNETCoreTest\NETCoreAPPTest\bin\Debug\netcoreapp1.1\NETCoreAPPTest.runtimeconfig.json
+E:\提升\ASPNETCoreTest\NETCoreAPPTest\bin\Debug\netcoreapp1.1\NETCoreAPPTest.runtimeconfig.dev.json
+E:\提升\ASPNETCoreTest\NETCoreAPPTest\bin\Debug\netcoreapp1.1\NETCoreAPPTest.dll
+E:\提升\ASPNETCoreTest\NETCoreAPPTest\obj\Debug\netcoreapp1.1\NETCoreAPPTest.csprojResolveAssemblyReference.cache
+E:\提升\ASPNETCoreTest\NETCoreAPPTest\obj\Debug\netcoreapp1.1\NETCoreAPPTest.AssemblyInfo.cs
+E:\提升\ASPNETCoreTest\NETCoreAPPTest\bin\Debug\netcoreapp1.1\NETCoreAPPTest.pdb
+E:\提升\ASPNETCoreTest\NETCoreAPPTest\obj\Debug\netcoreapp1.1\NETCoreAPPTest.dll
+E:\提升\ASPNETCoreTest\NETCoreAPPTest\obj\Debug\netcoreapp1.1\NETCoreAPPTest.pdb
