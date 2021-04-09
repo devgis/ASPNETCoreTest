@@ -1,5 +1,3 @@
-C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\bin\Debug\net5.0\appsettings.Development.json
-C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\bin\Debug\net5.0\appsettings.json
 C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\bin\Debug\net5.0\CoreMVCWebApp.StaticWebAssets.xml
 C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\bin\Debug\net5.0\CoreMVCWebApp.exe
 C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\bin\Debug\net5.0\CoreMVCWebApp.deps.json
@@ -396,3 +394,6 @@ C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\obj\Debug\net5.0\Razor\Views\Er
 C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\obj\Debug\net5.0\CoreMVCWebApp.csprojAssemblyReference.cache
 C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\bin\Debug\net5.0\log4net.dll
 C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\bin\Debug\net5.0\log4net.config
+C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\bin\Debug\net5.0\myconfig.Development.json
+C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\bin\Debug\net5.0\myconfig.json
+C:\Work\GitHub\ASPNETCoreTest\Code\CoreMVCWebApp\bin\Debug\net5.0\appsettings.json

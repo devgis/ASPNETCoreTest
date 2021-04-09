@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNETCoreTest", "ASPNETCoreTest\ASPNETCoreTest.csproj", "{DA36A38F-85EC-44BB-A5E2-E9A2E56E436D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NETCoreAPPTest", "NETCoreAPPTest\NETCoreAPPTest.csproj", "{E109B99A-6928-4289-AFEC-9FADCD867747}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebApp", "CoreWebApp\CoreWebApp.csproj", "{0F6A8757-428B-4381-88AA-316046236678}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMVCWebApp", "CoreMVCWebApp\CoreMVCWebApp.csproj", "{1D503B59-2798-409C-A43B-8BA5E527B571}"
 EndProject
@@ -17,18 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA36A38F-85EC-44BB-A5E2-E9A2E56E436D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA36A38F-85EC-44BB-A5E2-E9A2E56E436D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA36A38F-85EC-44BB-A5E2-E9A2E56E436D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA36A38F-85EC-44BB-A5E2-E9A2E56E436D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E109B99A-6928-4289-AFEC-9FADCD867747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E109B99A-6928-4289-AFEC-9FADCD867747}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E109B99A-6928-4289-AFEC-9FADCD867747}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E109B99A-6928-4289-AFEC-9FADCD867747}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0F6A8757-428B-4381-88AA-316046236678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F6A8757-428B-4381-88AA-316046236678}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F6A8757-428B-4381-88AA-316046236678}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F6A8757-428B-4381-88AA-316046236678}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1D503B59-2798-409C-A43B-8BA5E527B571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D503B59-2798-409C-A43B-8BA5E527B571}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D503B59-2798-409C-A43B-8BA5E527B571}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -7,6 +7,10 @@
       "sslPort": 44371
     }
   },
+  "Myconfig": {
+    "ISOK": false,
+    "Hello": "Hello Test"
+  },
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
