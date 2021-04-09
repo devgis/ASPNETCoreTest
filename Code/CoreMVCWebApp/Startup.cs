@@ -46,10 +46,15 @@ namespace CoreMVCWebApp
             //services.AddDirectoryBrowser();
 
             //inject services;
-
             services.AddSingleton<IInjectService1, InjectService1>();
             services.AddScoped<IInjectService2, InjectService2>();
             services.AddTransient<IInjectService3, InjectService3>();
+
+            //Use session
+            services.AddSession(options=> {
+                options.Cookie.Name = ".CoreMVCTest.Session";
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -90,7 +95,7 @@ namespace CoreMVCWebApp
             //app.Run(async context => {
             //    await context.Response.Body.WriteAsync(body,0,body.Length);
             //});
-
+            app.UseSession();
             //Mapwhen Useage
             ConfigureMapWhenHello(app);
 
@@ -109,16 +114,50 @@ namespace CoreMVCWebApp
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+
+            
         }
 
         #region MapWhen methods 
         private static void HandleHelloBranch(IApplicationBuilder app)
         {
+            
             //short circuiting
-            byte[] body = Encoding.Default.GetBytes("Hello! this is an test MapWhen url!");
+            byte[] body = Encoding.Default.GetBytes("Hello! this is an test MapWhen url!\r\n");
             app.Run(async context =>
             {
+                context.Session.Set("key1", Encoding.Default.GetBytes("TestKey1"));
+                context.Session.Set("key2", Encoding.Default.GetBytes("TestKey2"));
+                context.Session.Set("key3", Encoding.Default.GetBytes("TestKey3"));
                 await context.Response.Body.WriteAsync(body, 0, body.Length);
+
+                body = Encoding.Default.GetBytes($"SessionID:{context.Session.Id}\r\n");
+                await context.Response.Body.WriteAsync(body, 0, body.Length);
+
+                if (context.Session.Keys.Count() > 0)
+                {
+                    body = Encoding.Default.GetBytes("SessionInfos:\r\n");
+                    await context.Response.Body.WriteAsync(body, 0, body.Length);
+                    foreach (string s in context.Session.Keys)
+                    {
+                        byte[] arr;
+                        if (context.Session.TryGetValue(s, out arr))
+                        {
+                            body = Encoding.Default.GetBytes($"{s}:{Encoding.Default.GetString(arr)}\r\n");
+                        }
+                        else
+                        {
+                            body = Encoding.Default.GetBytes($"{s}:novalue\r\n");
+                        }
+                        await context.Response.Body.WriteAsync(body, 0, body.Length);
+                    }
+                }
+                else
+                {
+                    body = Encoding.Default.GetBytes("Session Is Empty!\r\n");
+                    await context.Response.Body.WriteAsync(body, 0, body.Length);
+                }
+                
             });
         }
 
