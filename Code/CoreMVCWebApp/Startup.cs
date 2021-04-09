@@ -1,5 +1,6 @@
 using CoreMVCWebApp.Data;
 using CoreMVCWebApp.Extensions;
+using CoreMVCWebApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,10 +9,12 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +41,15 @@ namespace CoreMVCWebApp
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+
+            //services.AddDirectoryBrowser();
+            //services.AddDirectoryBrowser();
+
+            //inject services;
+
+            services.AddSingleton<IInjectService1, InjectService1>();
+            services.AddScoped<IInjectService2, InjectService2>();
+            services.AddTransient<IInjectService3, InjectService3>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,6 +69,18 @@ namespace CoreMVCWebApp
             app.UseExceptionHandler("/Error");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            //use folder broswer UseFileServer
+            app.UseStaticFiles(new StaticFileOptions(){
+                FileProvider=new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),@"wwwroot\images")),
+                RequestPath=new Microsoft.AspNetCore.Http.PathString("/MyImages")
+                });
+
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\images")),
+                RequestPath = new Microsoft.AspNetCore.Http.PathString("/MyImages2")
+            });
 
 
             loggerFactory.AddLog4Net();//log4net
